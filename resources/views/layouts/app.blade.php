@@ -15,12 +15,20 @@
         @include('inc.messages')
         @yield('content')
     </div>
-    {{-- <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    
+    
+    <script src="{{asset('js/app.js')}}"></script>
+
     <script>
-        CKEDITOR.replace( 'ckeditor' );
+        ClassicEditor
+            .create(document.querySelector('#article-ckeditor'))
+            .then(editor => {
+                window.editor = editor;
+            })
+            .catch(error => {
+                console.error('There was a problem initializing the editor.', error);
+            });
     </script>
-    <script src="../node_modules/ckeditor4/ckeditor.js"></script>
-<script src="../node_modules/ckeditor4-vue/dist/ckeditor.js"></script> --}}
 </body>
 
 </html>
