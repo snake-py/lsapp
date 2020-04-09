@@ -13,4 +13,5 @@ const mix = require('laravel-mix');
 
 mix.js("resources/js/app.js", "public/js")
     .js("resources/js/quillEditor.js", "public/js/quillEditor.js")
+    .js("resources/js/ckEditor.js", "public/js/CkEditor.js")
     .sass("resources/sass/app.scss", "public/css");
