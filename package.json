@@ -24,7 +24,7 @@
     },
     "dependencies": {
         "@ckeditor/ckeditor5-build-classic": "^18.0.0",
-        "ckeditor4": "^4.13.1",
-        "ckeditor4-vue": "^0.1.0"
+        "quill": "^1.3.7",
+        "quill-image-resize": "^3.0.9"
     }
 }

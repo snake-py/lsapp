@@ -37070,7 +37070,13 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(/*! @ckeditor/ckeditor5-build-classic/build/ckeditor.js */ "./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js");
+var ClassicEditor = __webpack_require__(/*! @ckeditor/ckeditor5-build-classic/build/ckeditor.js */ "./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js");
+
+ClassicEditor.create(document.querySelector("#article-ckeditor")).then(function (editor) {
+  window.editor = editor;
+})["catch"](function (error) {
+  console.error("There was a problem initializing the editor.", error);
+});
 
 /***/ }),
 
